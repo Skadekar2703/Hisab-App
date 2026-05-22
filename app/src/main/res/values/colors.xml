@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hisab_background">#FFF9F9F9</color>
+    <color name="hisab_surface">#FFFFFFFF</color>
+    <color name="hisab_primary">#FF8F4E00</color>
+    <color name="hisab_secondary">#FF785900</color>
+    <color name="hisab_accent">#FF006E1C</color>
+    <color name="hisab_text_primary">#FF1A1C1C</color>
+    <color name="hisab_text_secondary">#FF564334</color>
+    <color name="hisab_expense">#FFBA1A1A</color>
+    <color name="hisab_income">#FF006E1C</color>
+    <color name="hisab_divider">#FFE2E2E2</color>
+    <color name="hisab_orange">#FFFF8F00</color>
+    <color name="hisab_yellow">#FFFDC003</color>
+    <color name="hisab_green">#FF62BF62</color>
+    <color name="hisab_brown">#FF8F4E00</color>
+    <color name="hisab_brown_dim">#FF623400</color>
+    <color name="hisab_brown_faint">#FF6D3A00</color>
+    <color name="hisab_splash_bg">#FF111111</color>
+    <color name="hisab_splash_subtitle">#FFBDBDBD</color>
+    <color name="hisab_outline_light">#FFDCC1AE</color>
+    <color name="hisab_chip_gray">#FFEEEEEE</color>
+    <color name="hisab_chip_pink">#FFFFDCC2</color>
+    <color name="hisab_chip_yellow">#FFFFDF9E</color>
+    <color name="hisab_chip_green">#FF98F994</color>
+    <color name="hisab_chip_beige">#FFF3F3F3</color>
+    <color name="hisab_surface_low">#FFF3F3F3</color>
+    <color name="hisab_surface_mid">#FFE8E8E8</color>
+    <color name="hisab_surface_high">#FFE2E2E2</color>
+    <color name="hisab_primary_fixed">#FFFFDCC2</color>
+    <color name="hisab_secondary_fixed">#FFFFDF9E</color>
+    <color name="hisab_tertiary_fixed">#FF98F994</color>
+    <color name="hisab_nav_surface">#F2FFFFFF</color>
+    <color name="hisab_shadow_soft">#12000000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

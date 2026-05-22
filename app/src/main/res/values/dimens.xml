@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_md">12dp</dimen>
+    <dimen name="month_chip_height">52dp</dimen>
+    <dimen name="category_card_width">0dp</dimen>
+    <dimen name="category_card_height">104dp</dimen>
+</resources>

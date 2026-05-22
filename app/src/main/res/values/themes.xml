@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Hisab" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/hisab_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/hisab_secondary</item>
+        <item name="colorTertiary">@color/hisab_accent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/hisab_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/hisab_background</item>
+        <item name="colorSurface">@color/hisab_surface</item>
+        <item name="colorOnSurface">@color/hisab_text_primary</item>
+        <item name="colorOutline">@color/hisab_divider</item>
+        <item name="fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+    </style>
+
+    <style name="Theme.Hisab" parent="Base.Theme.Hisab" />
+
+    <style name="Widget.Hisab.BottomNavigationView.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">44dp</item>
+        <item name="android:height">28dp</item>
+        <item name="android:color">@color/hisab_orange</item>
+    </style>
+
+    <style name="TextAppearance.Hisab.BottomNavigation" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+    </style>
+</resources>

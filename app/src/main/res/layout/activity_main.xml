@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_light"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/splashContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_screen_dark"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="28dp"
+        android:paddingVertical="24dp">
+
+        <View
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="-120dp"
+            android:layout_marginTop="-80dp"
+            android:background="@drawable/bg_dark_glow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="128dp"
+                android:layout_height="128dp">
+
+                <View
+                    android:layout_width="112dp"
+                    android:layout_height="112dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_wallet_icon_tile"
+                    android:rotation="12"
+                    android:alpha="0.3" />
+
+                <FrameLayout
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_splash_icon_tile"
+                    android:elevation="10dp">
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_logo"
+                        android:src="@drawable/ic_payments"
+                        app:tint="@color/white" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/splashTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/splash_tagline"
+                android:textAlignment="center"
+                android:textColor="@color/hisab_splash_subtitle"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/getStartedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:backgroundTint="@color/hisab_orange"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minHeight="0dp"
+                android:paddingVertical="18dp"
+                android:text="@string/get_started"
+                android:textAllCaps="false"
+                android:textColor="@color/hisab_brown_dim"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:cornerRadius="999dp"
+                app:icon="@drawable/ic_arrow_right"
+                app:iconGravity="textEnd"
+                app:iconPadding="12dp"
+                app:iconTint="@color/hisab_brown_dim" />
+
+            <View
+                android:layout_width="236dp"
+                android:layout_height="236dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/bg_splash_art" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:letterSpacing="0.15"
+            android:text="@string/built_for_smarter_spending"
+            android:textAllCaps="true"
+            android:textColor="@color/hisab_splash_subtitle"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/loginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="top|start"
+                android:layout_marginStart="-80dp"
+                android:layout_marginTop="-20dp"
+                android:background="@drawable/bg_soft_glow_top" />
+
+            <View
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="-100dp"
+                android:layout_marginBottom="-20dp"
+                android:background="@drawable/bg_soft_glow_bottom" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingHorizontal="28dp"
+                android:paddingTop="72dp"
+                android:paddingBottom="36dp">
+
+                <FrameLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/bg_login_logo_tile"
+                    android:rotation="3"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_logo"
+                        android:src="@drawable/ic_wallet_mark"
+                        app:tint="@color/hisab_text_secondary" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/hisab_brown"
+                    android:textSize="42sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/welcome"
+                    android:textColor="@color/hisab_text_primary"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/login_tagline_long"
+                    android:textAlignment="center"
+                    android:textColor="@color/hisab_text_secondary"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="999dp"
+                    app:cardElevation="6dp"
+                    app:cardMaxElevation="10dp"
+                    app:strokeColor="@color/hisab_outline_light"
+                    app:strokeWidth="1dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/loginButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:paddingVertical="17dp"
+                        android:text="@string/continue_with_google"
+                        android:textAllCaps="false"
+                        android:textColor="@color/hisab_text_primary"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="999dp"
+                        app:icon="@drawable/ic_google_24"
+                        app:iconGravity="textStart"
+                        app:iconPadding="14dp"
+                        app:iconTint="@null"
+                        app:rippleColor="@color/hisab_chip_gray" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_divider_line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="18dp"
+                        android:text="@string/or"
+                        android:textColor="@color/hisab_text_secondary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_divider_line" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/emailInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/bg_input_surface"
+                    android:paddingHorizontal="24dp"
+                    android:paddingVertical="20dp"
+                    android:hint="@string/email_address"
+                    android:textColorHint="@color/hisab_text_secondary"
+                    android:textColor="@color/hisab_text_primary"
+                    android:inputType="textEmailAddress"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:importantForAutofill="no" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/continueButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="@color/hisab_brown"
+                    android:enabled="true"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingVertical="18dp"
+                    android:text="@string/continue_cta"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="999dp" />
+
+                <TextView
+                    android:id="@+id/loginTermsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="96dp"
+                    android:text="@string/login_terms"
+                    android:textAlignment="center"
+                    android:textColor="@color/hisab_text_secondary"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hisab_divider" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="56dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            app:elevation="0dp"
+            app:itemBackground="@android:color/transparent"
+            app:itemActiveIndicatorStyle="@style/Widget.Hisab.BottomNavigationView.ActiveIndicator"
+            app:itemIconSize="24dp"
+            app:itemIconTint="@color/nav_item_icon_colors"
+            app:itemRippleColor="@color/hisab_primary_fixed"
+            app:itemTextAppearanceActive="@style/TextAppearance.Hisab.BottomNavigation"
+            app:itemTextAppearanceInactive="@style/TextAppearance.Hisab.BottomNavigation"
+            app:itemTextColor="@color/nav_item_text_colors"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu_bottom_nav" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/hisab_brown"
+        android:visibility="gone" />
+
+</FrameLayout>
